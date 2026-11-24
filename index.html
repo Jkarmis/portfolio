@@ -16,6 +16,17 @@ a:focus-visible{outline:3px solid #0a6b4d;outline-offset:3px;border-radius:6px}
 .hero{background-image:repeating-linear-gradient(to bottom,transparent 0,transparent 47px,rgba(10,107,77,.07) 47px,rgba(10,107,77,.07) 48px)}
 .flag{animation:flag 1.1s .5s cubic-bezier(.16,1,.3,1) both}
 @keyframes flag{from{background:transparent}to{background:#fde8ef}}
+@media (max-width:640px){
+[style*="padding: 80px 24px"]{padding:48px 20px !important}
+[style*="padding: 64px 24px 16px"]{padding:40px 20px 8px !important}
+[style*="padding: 28px"]{padding:20px !important}
+h2[style*="font-size: 34px"]{font-size:28px !important;line-height:1.2 !important}
+.btn{width:100%;box-sizing:border-box;justify-content:center}
+#legal a{display:inline-block;padding:10px 0}
+figure img.wide{width:auto !important;max-width:none !important;height:300px !important}
+figure:has(img.wide){overflow-x:auto;-webkit-overflow-scrolling:touch}
+figure:has(img.wide) figcaption{position:sticky;left:0;max-width:calc(100vw - 90px)}
+}
 @media (prefers-reduced-motion:reduce){.btn{transition:none}.flag{animation:none;background:#fde8ef}}
 
 .lang{font:inherit;font-size:15px;color:#12201a;background:none;border:0;padding:14px 10px;min-height:44px;min-width:44px;cursor:pointer;border-radius:4px}
@@ -118,7 +129,7 @@ a:focus-visible{outline:3px solid #0a6b4d;outline-offset:3px;border-radius:6px}
 <h3 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 24px">MyBrokers: one dashboard for several brokers</h3>
 <p style="margin: 0; color: #47564d">A Flask platform that brings accounts from Interactive Brokers, Trading212 and Freedom24 into a single view, so positions and performance are not scattered across three apps.</p>
 <figure style="margin: 8px 0 0; display: flex; flex-direction: column; gap: 8px">
-<img src="./img/mybrokers-demo.png" width="1400" height="1375" loading="lazy" alt="MyBrokers dashboard with portfolio totals, three broker panels and a table of top positions" style="width: 100%; height: auto; display: block; border: 1px solid #c9d6c3; border-radius: 4px">
+<a href="./img/mybrokers-demo.png" target="_blank" rel="noopener" style="display: block"><img src="./img/mybrokers-demo.png" width="1400" height="1375" loading="lazy" alt="MyBrokers dashboard with portfolio totals, three broker panels and a table of top positions" style="width: 100%; height: auto; display: block; border: 1px solid #c9d6c3; border-radius: 4px"></a>
 <figcaption style="color: #47564d; font-size: 14px">Screenshot with demo data. Real account figures are never shown.</figcaption>
 </figure>
 </div>
@@ -126,7 +137,7 @@ a:focus-visible{outline:3px solid #0a6b4d;outline-offset:3px;border-radius:6px}
 <h3 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 24px">PPO trading agent</h3>
 <p style="margin: 0; color: #47564d">A reinforcement-learning system that trains and tests trading policies on market data, built to compare strategies under the same rules and costs.</p>
 <figure style="margin: 8px 0 0; display: flex; flex-direction: column; gap: 8px">
-<img src="./img/ppo-illustration.svg" width="1200" height="640" loading="lazy" alt="Line chart comparing a buy-and-hold line, a baseline model and a PPO policy under the same costs" style="width: 100%; height: auto; display: block; border: 1px solid #c9d6c3; border-radius: 4px">
+<a href="./img/ppo-illustration.svg" target="_blank" rel="noopener" style="display: block"><img src="./img/ppo-illustration.svg" width="1200" height="640" loading="lazy" alt="Line chart comparing a buy-and-hold line, a baseline model and a PPO policy under the same costs" style="width: 100%; height: auto; display: block; border: 1px solid #c9d6c3; border-radius: 4px"></a>
 <figcaption style="color: #47564d; font-size: 14px">Illustration with sample data, not real results.</figcaption>
 </figure>
 </div>
@@ -134,7 +145,7 @@ a:focus-visible{outline:3px solid #0a6b4d;outline-offset:3px;border-radius:6px}
 <h3 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 24px">Lead finder</h3>
 <p style="margin: 0; color: #47564d">A prospecting tool that scrapes public business listings into a structured list, ready to filter and contact.</p>
 <figure style="margin: 8px 0 0; display: flex; flex-direction: column; gap: 8px">
-<img src="./img/leadfinder-illustration.svg" width="1200" height="640" loading="lazy" alt="Diagram of public listings collected into one clean table and exported as CSV, CRM import or email list" style="width: 100%; height: auto; display: block; border: 1px solid #c9d6c3; border-radius: 4px">
+<a href="./img/leadfinder-illustration.svg" target="_blank" rel="noopener" style="display: block"><img src="./img/leadfinder-illustration.svg" width="1200" height="640" loading="lazy" alt="Diagram of public listings collected into one clean table and exported as CSV, CRM import or email list" style="width: 100%; height: auto; display: block; border: 1px solid #c9d6c3; border-radius: 4px"></a>
 <figcaption style="color: #47564d; font-size: 14px">Illustration with sample names, not real data.</figcaption>
 </figure>
 </div>
@@ -142,7 +153,7 @@ a:focus-visible{outline:3px solid #0a6b4d;outline-offset:3px;border-radius:6px}
 <h3 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 24px">Greek real estate listing statistics</h3>
 <p style="margin: 0; color: #47564d">A collector that gathers property listings from Greek classifieds and turns them into price and market statistics.</p>
 <figure style="margin: 8px 0 0; display: flex; flex-direction: column; gap: 8px">
-<img src="./img/realestate-illustration.svg" width="1200" height="640" loading="lazy" alt="Bar chart of median asking price per square metre by area, with the number of listings" style="width: 100%; height: auto; display: block; border: 1px solid #c9d6c3; border-radius: 4px">
+<a href="./img/realestate-illustration.svg" target="_blank" rel="noopener" style="display: block"><img src="./img/realestate-illustration.svg" width="1200" height="640" loading="lazy" alt="Bar chart of median asking price per square metre by area, with the number of listings" style="width: 100%; height: auto; display: block; border: 1px solid #c9d6c3; border-radius: 4px"></a>
 <figcaption style="color: #47564d; font-size: 14px">Illustration with sample data, not real market figures.</figcaption>
 </figure>
 </div>
@@ -154,7 +165,7 @@ a:focus-visible{outline:3px solid #0a6b4d;outline-offset:3px;border-radius:6px}
 <h3 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 22px">Protocol Flow</h3>
 <p style="margin: 0; color: #47564d">An Android app that works out syringe volumes from the protocol you enter, so nobody has to do the arithmetic by hand.</p>
 <figure style="margin: 8px 0 0; display: flex; flex-direction: column; gap: 8px">
-<img src="./img/protocolflow-demo.png" width="1526" height="1000" loading="lazy" alt="Protocol Flow test build showing the calculator, a syringe reading and the settings screen" style="width: 100%; height: auto; display: block; border: 1px solid #c9d6c3; border-radius: 4px">
+<a href="./img/protocolflow-demo.png" target="_blank" rel="noopener" style="display: block"><img src="./img/protocolflow-demo.png" width="1526" height="1000" loading="lazy" alt="Protocol Flow test build showing the calculator, a syringe reading and the settings screen" style="width: 100%; height: auto; display: block; border: 1px solid #c9d6c3; border-radius: 4px"></a>
 <figcaption style="color: #47564d; font-size: 14px">Test build, with no personal data entered.</figcaption>
 </figure>
 </div>
@@ -162,7 +173,7 @@ a:focus-visible{outline:3px solid #0a6b4d;outline-offset:3px;border-radius:6px}
 <h3 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 22px">Cycles</h3>
 <p style="margin: 0; color: #47564d">An Android app that helps a partner log cycle dates, see estimated phases and set reminders, designed around privacy and no required account.</p>
 <figure style="margin: 8px 0 0; display: flex; flex-direction: column; gap: 8px">
-<img src="./img/cycles-demo.png" width="1270" height="1100" loading="lazy" alt="Cycles app in light and dark themes, showing a five-week overview and a cycle ring" style="width: 100%; height: auto; display: block; border: 1px solid #c9d6c3; border-radius: 4px">
+<a href="./img/cycles-demo.png" target="_blank" rel="noopener" style="display: block"><img src="./img/cycles-demo.png" width="1270" height="1100" loading="lazy" alt="Cycles app in light and dark themes, showing a five-week overview and a cycle ring" style="width: 100%; height: auto; display: block; border: 1px solid #c9d6c3; border-radius: 4px"></a>
 <figcaption style="color: #47564d; font-size: 14px">Light and dark themes, with sample names.</figcaption>
 </figure>
 </div>
@@ -170,7 +181,7 @@ a:focus-visible{outline:3px solid #0a6b4d;outline-offset:3px;border-radius:6px}
 <h3 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 22px">Dating Revealed companion</h3>
 <p style="margin: 0; color: #47564d">A Greek-language web app for people using dating apps. It answers questions using the content of my own book, so advice stays grounded in the material instead of generic tips.</p>
 <figure style="margin: 8px 0 0; display: flex; flex-direction: column; gap: 8px">
-<img src="./img/datingrevealed-demo.png" width="1008" height="1000" loading="lazy" alt="Dating Revealed companion app with the Greek coach screen and the book library" style="width: 100%; height: auto; display: block; border: 1px solid #c9d6c3; border-radius: 4px">
+<a href="./img/datingrevealed-demo.png" target="_blank" rel="noopener" style="display: block"><img src="./img/datingrevealed-demo.png" width="1008" height="1000" loading="lazy" alt="Dating Revealed companion app with the Greek coach screen and the book library" style="width: 100%; height: auto; display: block; border: 1px solid #c9d6c3; border-radius: 4px"></a>
 <figcaption style="color: #47564d; font-size: 14px">The coach screen in Greek and the library of book chapters.</figcaption>
 </figure>
 </div>
@@ -178,7 +189,7 @@ a:focus-visible{outline:3px solid #0a6b4d;outline-offset:3px;border-radius:6px}
 <h3 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 22px">The Tango Book app</h3>
 <p style="margin: 0; color: #47564d">An Android companion app for a tango book, built for its author. Readers follow the chapters, browse the book's drawings by topic and watch each movement as a slow, step-by-step animation.</p>
 <figure style="margin: 8px 0 0; display: flex; flex-direction: column; gap: 8px">
-<img src="./img/tangobook-demo.png" width="1800" height="904" loading="lazy" alt="The Tango Book app showing the home screen, the chapter list, the figure gallery and an animated movement with speed control" style="width: 100%; height: auto; display: block; border: 1px solid #c9d6c3; border-radius: 4px">
+<a href="./img/tangobook-demo.png" target="_blank" rel="noopener" style="display: block"><img class="wide" src="./img/tangobook-demo.png" width="1800" height="904" loading="lazy" alt="The Tango Book app showing the home screen, the chapter list, the figure gallery and an animated movement with speed control" style="width: 100%; height: auto; display: block; border: 1px solid #c9d6c3; border-radius: 4px"></a>
 <figcaption style="color: #47564d; font-size: 14px">Early build, in Spanish, with a speed control for the animations.</figcaption>
 </figure>
 </div>
@@ -422,7 +433,7 @@ a:focus-visible{outline:3px solid #0a6b4d;outline-offset:3px;border-radius:6px}
 <h3 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 24px">MyBrokers: un panel para varios brokers</h3>
 <p style="margin: 0; color: #47564d">Una plataforma Flask que reúne las cuentas de Interactive Brokers, Trading212 y Freedom24 en una sola vista, para que posiciones y rendimiento no estén repartidos en tres apps.</p>
 <figure style="margin: 8px 0 0; display: flex; flex-direction: column; gap: 8px">
-<img src="./img/mybrokers-demo.png" width="1400" height="1375" loading="lazy" alt="Panel de MyBrokers con totales de cartera, tres paneles de brókers y una tabla de posiciones principales" style="width: 100%; height: auto; display: block; border: 1px solid #c9d6c3; border-radius: 4px">
+<a href="./img/mybrokers-demo.png" target="_blank" rel="noopener" style="display: block"><img src="./img/mybrokers-demo.png" width="1400" height="1375" loading="lazy" alt="Panel de MyBrokers con totales de cartera, tres paneles de brókers y una tabla de posiciones principales" style="width: 100%; height: auto; display: block; border: 1px solid #c9d6c3; border-radius: 4px"></a>
 <figcaption style="color: #47564d; font-size: 14px">Captura con datos de demostración. Nunca se muestran cifras de cuentas reales.</figcaption>
 </figure>
 </div>
@@ -430,7 +441,7 @@ a:focus-visible{outline:3px solid #0a6b4d;outline-offset:3px;border-radius:6px}
 <h3 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 24px">Agente de trading PPO</h3>
 <p style="margin: 0; color: #47564d">Un sistema de aprendizaje por refuerzo que entrena y prueba políticas de trading con datos de mercado, diseñado para comparar estrategias con las mismas reglas y costes.</p>
 <figure style="margin: 8px 0 0; display: flex; flex-direction: column; gap: 8px">
-<img src="./img/ppo-illustration.svg" width="1200" height="640" loading="lazy" alt="Gráfico de líneas que compara comprar y mantener, un modelo base y una política PPO con los mismos costes" style="width: 100%; height: auto; display: block; border: 1px solid #c9d6c3; border-radius: 4px">
+<a href="./img/ppo-illustration.svg" target="_blank" rel="noopener" style="display: block"><img src="./img/ppo-illustration.svg" width="1200" height="640" loading="lazy" alt="Gráfico de líneas que compara comprar y mantener, un modelo base y una política PPO con los mismos costes" style="width: 100%; height: auto; display: block; border: 1px solid #c9d6c3; border-radius: 4px"></a>
 <figcaption style="color: #47564d; font-size: 14px">Ilustración con datos de ejemplo, no resultados reales.</figcaption>
 </figure>
 </div>
@@ -438,7 +449,7 @@ a:focus-visible{outline:3px solid #0a6b4d;outline-offset:3px;border-radius:6px}
 <h3 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 24px">Buscador de leads</h3>
 <p style="margin: 0; color: #47564d">Una herramienta de prospección que extrae listados públicos de empresas en una lista estructurada, lista para filtrar y contactar.</p>
 <figure style="margin: 8px 0 0; display: flex; flex-direction: column; gap: 8px">
-<img src="./img/leadfinder-illustration.svg" width="1200" height="640" loading="lazy" alt="Diagrama de anuncios públicos reunidos en una tabla limpia y exportados como CSV, importación a CRM o lista de correo" style="width: 100%; height: auto; display: block; border: 1px solid #c9d6c3; border-radius: 4px">
+<a href="./img/leadfinder-illustration.svg" target="_blank" rel="noopener" style="display: block"><img src="./img/leadfinder-illustration.svg" width="1200" height="640" loading="lazy" alt="Diagrama de anuncios públicos reunidos en una tabla limpia y exportados como CSV, importación a CRM o lista de correo" style="width: 100%; height: auto; display: block; border: 1px solid #c9d6c3; border-radius: 4px"></a>
 <figcaption style="color: #47564d; font-size: 14px">Ilustración con nombres de ejemplo, no datos reales.</figcaption>
 </figure>
 </div>
@@ -446,7 +457,7 @@ a:focus-visible{outline:3px solid #0a6b4d;outline-offset:3px;border-radius:6px}
 <h3 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 24px">Estadísticas de anuncios inmobiliarios en Grecia</h3>
 <p style="margin: 0; color: #47564d">Un recolector que reúne anuncios de propiedades de portales de clasificados griegos y los convierte en estadísticas de precios y mercado.</p>
 <figure style="margin: 8px 0 0; display: flex; flex-direction: column; gap: 8px">
-<img src="./img/realestate-illustration.svg" width="1200" height="640" loading="lazy" alt="Gráfico de barras del precio mediano de oferta por metro cuadrado por zona, con el número de anuncios" style="width: 100%; height: auto; display: block; border: 1px solid #c9d6c3; border-radius: 4px">
+<a href="./img/realestate-illustration.svg" target="_blank" rel="noopener" style="display: block"><img src="./img/realestate-illustration.svg" width="1200" height="640" loading="lazy" alt="Gráfico de barras del precio mediano de oferta por metro cuadrado por zona, con el número de anuncios" style="width: 100%; height: auto; display: block; border: 1px solid #c9d6c3; border-radius: 4px"></a>
 <figcaption style="color: #47564d; font-size: 14px">Ilustración con datos de ejemplo, no cifras reales del mercado.</figcaption>
 </figure>
 </div>
@@ -458,7 +469,7 @@ a:focus-visible{outline:3px solid #0a6b4d;outline-offset:3px;border-radius:6px}
 <h3 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 22px">Protocol Flow</h3>
 <p style="margin: 0; color: #47564d">Una app Android que calcula los volúmenes de jeringa a partir del protocolo que introduces, para que nadie tenga que hacer la aritmética a mano.</p>
 <figure style="margin: 8px 0 0; display: flex; flex-direction: column; gap: 8px">
-<img src="./img/protocolflow-demo.png" width="1526" height="1000" loading="lazy" alt="Versión de prueba de Protocol Flow con la calculadora, una lectura de jeringa y la pantalla de ajustes" style="width: 100%; height: auto; display: block; border: 1px solid #c9d6c3; border-radius: 4px">
+<a href="./img/protocolflow-demo.png" target="_blank" rel="noopener" style="display: block"><img src="./img/protocolflow-demo.png" width="1526" height="1000" loading="lazy" alt="Versión de prueba de Protocol Flow con la calculadora, una lectura de jeringa y la pantalla de ajustes" style="width: 100%; height: auto; display: block; border: 1px solid #c9d6c3; border-radius: 4px"></a>
 <figcaption style="color: #47564d; font-size: 14px">Versión de prueba, sin datos personales.</figcaption>
 </figure>
 </div>
@@ -466,7 +477,7 @@ a:focus-visible{outline:3px solid #0a6b4d;outline-offset:3px;border-radius:6px}
 <h3 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 22px">Cycles</h3>
 <p style="margin: 0; color: #47564d">Una app Android que ayuda a la pareja a registrar fechas del ciclo, ver fases estimadas y configurar recordatorios, diseñada en torno a la privacidad y sin cuenta obligatoria.</p>
 <figure style="margin: 8px 0 0; display: flex; flex-direction: column; gap: 8px">
-<img src="./img/cycles-demo.png" width="1270" height="1100" loading="lazy" alt="App Cycles en tema claro y oscuro, con la vista de cinco semanas y el anillo del ciclo" style="width: 100%; height: auto; display: block; border: 1px solid #c9d6c3; border-radius: 4px">
+<a href="./img/cycles-demo.png" target="_blank" rel="noopener" style="display: block"><img src="./img/cycles-demo.png" width="1270" height="1100" loading="lazy" alt="App Cycles en tema claro y oscuro, con la vista de cinco semanas y el anillo del ciclo" style="width: 100%; height: auto; display: block; border: 1px solid #c9d6c3; border-radius: 4px"></a>
 <figcaption style="color: #47564d; font-size: 14px">Temas claro y oscuro, con nombres de ejemplo.</figcaption>
 </figure>
 </div>
@@ -474,7 +485,7 @@ a:focus-visible{outline:3px solid #0a6b4d;outline-offset:3px;border-radius:6px}
 <h3 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 22px">Dating Revealed: app compañera</h3>
 <p style="margin: 0; color: #47564d">Una app web en griego para quienes usan apps de citas. Responde preguntas con el contenido de mi propio libro, para que los consejos se basen en el material y no en trucos genéricos.</p>
 <figure style="margin: 8px 0 0; display: flex; flex-direction: column; gap: 8px">
-<img src="./img/datingrevealed-demo.png" width="1008" height="1000" loading="lazy" alt="App compañera de Dating Revealed con la pantalla del coach en griego y la biblioteca del libro" style="width: 100%; height: auto; display: block; border: 1px solid #c9d6c3; border-radius: 4px">
+<a href="./img/datingrevealed-demo.png" target="_blank" rel="noopener" style="display: block"><img src="./img/datingrevealed-demo.png" width="1008" height="1000" loading="lazy" alt="App compañera de Dating Revealed con la pantalla del coach en griego y la biblioteca del libro" style="width: 100%; height: auto; display: block; border: 1px solid #c9d6c3; border-radius: 4px"></a>
 <figcaption style="color: #47564d; font-size: 14px">La pantalla del coach en griego y la biblioteca de capítulos del libro.</figcaption>
 </figure>
 </div>
@@ -482,7 +493,7 @@ a:focus-visible{outline:3px solid #0a6b4d;outline-offset:3px;border-radius:6px}
 <h3 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 22px">App de The Tango Book</h3>
 <p style="margin: 0; color: #47564d">Una app Android complementaria para un libro de tango, creada para su autor. Los lectores siguen los capítulos, exploran los dibujos del libro por tema y ven cada movimiento en una animación lenta, paso a paso.</p>
 <figure style="margin: 8px 0 0; display: flex; flex-direction: column; gap: 8px">
-<img src="./img/tangobook-demo.png" width="1800" height="904" loading="lazy" alt="App The Tango Book con la pantalla de inicio, la lista de capítulos, la galería de figuras y un movimiento animado con control de velocidad" style="width: 100%; height: auto; display: block; border: 1px solid #c9d6c3; border-radius: 4px">
+<a href="./img/tangobook-demo.png" target="_blank" rel="noopener" style="display: block"><img class="wide" src="./img/tangobook-demo.png" width="1800" height="904" loading="lazy" alt="App The Tango Book con la pantalla de inicio, la lista de capítulos, la galería de figuras y un movimiento animado con control de velocidad" style="width: 100%; height: auto; display: block; border: 1px solid #c9d6c3; border-radius: 4px"></a>
 <figcaption style="color: #47564d; font-size: 14px">Versión temprana, en español, con control de velocidad para las animaciones.</figcaption>
 </figure>
 </div>
@@ -726,7 +737,7 @@ a:focus-visible{outline:3px solid #0a6b4d;outline-offset:3px;border-radius:6px}
 <h3 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 24px">MyBrokers: ένας πίνακας ελέγχου για πολλούς brokers</h3>
 <p style="margin: 0; color: #47564d">Μια πλατφόρμα Flask που συγκεντρώνει τους λογαριασμούς από Interactive Brokers, Trading212 και Freedom24 σε μία οθόνη, ώστε θέσεις και απόδοση να μην είναι διάσπαρτες σε τρεις εφαρμογές.</p>
 <figure style="margin: 8px 0 0; display: flex; flex-direction: column; gap: 8px">
-<img src="./img/mybrokers-demo.png" width="1400" height="1375" loading="lazy" alt="Πίνακας MyBrokers με σύνολα χαρτοφυλακίου, τρία πάνελ brokers και πίνακα κορυφαίων θέσεων" style="width: 100%; height: auto; display: block; border: 1px solid #c9d6c3; border-radius: 4px">
+<a href="./img/mybrokers-demo.png" target="_blank" rel="noopener" style="display: block"><img src="./img/mybrokers-demo.png" width="1400" height="1375" loading="lazy" alt="Πίνακας MyBrokers με σύνολα χαρτοφυλακίου, τρία πάνελ brokers και πίνακα κορυφαίων θέσεων" style="width: 100%; height: auto; display: block; border: 1px solid #c9d6c3; border-radius: 4px"></a>
 <figcaption style="color: #47564d; font-size: 14px">Στιγμιότυπο με δοκιμαστικά δεδομένα. Δεν εμφανίζονται ποτέ πραγματικά ποσά λογαριασμών.</figcaption>
 </figure>
 </div>
@@ -734,7 +745,7 @@ a:focus-visible{outline:3px solid #0a6b4d;outline-offset:3px;border-radius:6px}
 <h3 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 24px">Πράκτορας συναλλαγών PPO</h3>
 <p style="margin: 0; color: #47564d">Ένα σύστημα reinforcement learning που εκπαιδεύει και δοκιμάζει πολιτικές συναλλαγών σε δεδομένα αγοράς, φτιαγμένο για σύγκριση στρατηγικών με τους ίδιους κανόνες και κόστη.</p>
 <figure style="margin: 8px 0 0; display: flex; flex-direction: column; gap: 8px">
-<img src="./img/ppo-illustration.svg" width="1200" height="640" loading="lazy" alt="Γράφημα γραμμών που συγκρίνει αγορά και διακράτηση, ένα βασικό μοντέλο και μια πολιτική PPO με τα ίδια κόστη" style="width: 100%; height: auto; display: block; border: 1px solid #c9d6c3; border-radius: 4px">
+<a href="./img/ppo-illustration.svg" target="_blank" rel="noopener" style="display: block"><img src="./img/ppo-illustration.svg" width="1200" height="640" loading="lazy" alt="Γράφημα γραμμών που συγκρίνει αγορά και διακράτηση, ένα βασικό μοντέλο και μια πολιτική PPO με τα ίδια κόστη" style="width: 100%; height: auto; display: block; border: 1px solid #c9d6c3; border-radius: 4px"></a>
 <figcaption style="color: #47564d; font-size: 14px">Εικονογράφηση με δεδομένα δείγματος, όχι πραγματικά αποτελέσματα.</figcaption>
 </figure>
 </div>
@@ -742,7 +753,7 @@ a:focus-visible{outline:3px solid #0a6b4d;outline-offset:3px;border-radius:6px}
 <h3 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 24px">Εύρεση leads</h3>
 <p style="margin: 0; color: #47564d">Ένα εργαλείο πελατολογίου που μαζεύει δημόσιους καταλόγους επιχειρήσεων σε δομημένη λίστα, έτοιμη για φιλτράρισμα και επικοινωνία.</p>
 <figure style="margin: 8px 0 0; display: flex; flex-direction: column; gap: 8px">
-<img src="./img/leadfinder-illustration.svg" width="1200" height="640" loading="lazy" alt="Διάγραμμα δημόσιων καταχωρίσεων που συγκεντρώνονται σε έναν καθαρό πίνακα και εξάγονται ως CSV, εισαγωγή σε CRM ή λίστα email" style="width: 100%; height: auto; display: block; border: 1px solid #c9d6c3; border-radius: 4px">
+<a href="./img/leadfinder-illustration.svg" target="_blank" rel="noopener" style="display: block"><img src="./img/leadfinder-illustration.svg" width="1200" height="640" loading="lazy" alt="Διάγραμμα δημόσιων καταχωρίσεων που συγκεντρώνονται σε έναν καθαρό πίνακα και εξάγονται ως CSV, εισαγωγή σε CRM ή λίστα email" style="width: 100%; height: auto; display: block; border: 1px solid #c9d6c3; border-radius: 4px"></a>
 <figcaption style="color: #47564d; font-size: 14px">Εικονογράφηση με ονόματα δείγματος, όχι πραγματικά δεδομένα.</figcaption>
 </figure>
 </div>
@@ -750,7 +761,7 @@ a:focus-visible{outline:3px solid #0a6b4d;outline-offset:3px;border-radius:6px}
 <h3 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 24px">Στατιστικά αγγελιών ακινήτων στην Ελλάδα</h3>
 <p style="margin: 0; color: #47564d">Ένας συλλέκτης που μαζεύει αγγελίες ακινήτων από ελληνικά classifieds και τις μετατρέπει σε στατιστικά τιμών και αγοράς.</p>
 <figure style="margin: 8px 0 0; display: flex; flex-direction: column; gap: 8px">
-<img src="./img/realestate-illustration.svg" width="1200" height="640" loading="lazy" alt="Ραβδογράφημα της διάμεσης τιμής ζήτησης ανά τετραγωνικό μέτρο ανά περιοχή, με τον αριθμό αγγελιών" style="width: 100%; height: auto; display: block; border: 1px solid #c9d6c3; border-radius: 4px">
+<a href="./img/realestate-illustration.svg" target="_blank" rel="noopener" style="display: block"><img src="./img/realestate-illustration.svg" width="1200" height="640" loading="lazy" alt="Ραβδογράφημα της διάμεσης τιμής ζήτησης ανά τετραγωνικό μέτρο ανά περιοχή, με τον αριθμό αγγελιών" style="width: 100%; height: auto; display: block; border: 1px solid #c9d6c3; border-radius: 4px"></a>
 <figcaption style="color: #47564d; font-size: 14px">Εικονογράφηση με δεδομένα δείγματος, όχι πραγματικά στοιχεία της αγοράς.</figcaption>
 </figure>
 </div>
@@ -762,7 +773,7 @@ a:focus-visible{outline:3px solid #0a6b4d;outline-offset:3px;border-radius:6px}
 <h3 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 22px">Protocol Flow</h3>
 <p style="margin: 0; color: #47564d">Μια εφαρμογή Android που υπολογίζει τους όγκους σύριγγας από το πρωτόκολλο που εισάγετε, ώστε κανείς να μη χρειάζεται να κάνει τις πράξεις με το χέρι.</p>
 <figure style="margin: 8px 0 0; display: flex; flex-direction: column; gap: 8px">
-<img src="./img/protocolflow-demo.png" width="1526" height="1000" loading="lazy" alt="Δοκιμαστική έκδοση του Protocol Flow με τον υπολογιστή, μια ένδειξη σύριγγας και τις ρυθμίσεις" style="width: 100%; height: auto; display: block; border: 1px solid #c9d6c3; border-radius: 4px">
+<a href="./img/protocolflow-demo.png" target="_blank" rel="noopener" style="display: block"><img src="./img/protocolflow-demo.png" width="1526" height="1000" loading="lazy" alt="Δοκιμαστική έκδοση του Protocol Flow με τον υπολογιστή, μια ένδειξη σύριγγας και τις ρυθμίσεις" style="width: 100%; height: auto; display: block; border: 1px solid #c9d6c3; border-radius: 4px"></a>
 <figcaption style="color: #47564d; font-size: 14px">Δοκιμαστική έκδοση, χωρίς προσωπικά δεδομένα.</figcaption>
 </figure>
 </div>
@@ -770,7 +781,7 @@ a:focus-visible{outline:3px solid #0a6b4d;outline-offset:3px;border-radius:6px}
 <h3 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 22px">Cycles</h3>
 <p style="margin: 0; color: #47564d">Μια εφαρμογή Android που βοηθά τον σύντροφο να καταγράφει ημερομηνίες κύκλου, να βλέπει εκτιμώμενες φάσεις και να ορίζει υπενθυμίσεις, σχεδιασμένη με προτεραιότητα την ιδιωτικότητα και χωρίς υποχρεωτικό λογαριασμό.</p>
 <figure style="margin: 8px 0 0; display: flex; flex-direction: column; gap: 8px">
-<img src="./img/cycles-demo.png" width="1270" height="1100" loading="lazy" alt="Η εφαρμογή Cycles σε φωτεινό και σκούρο θέμα, με επισκόπηση πέντε εβδομάδων και κύκλο" style="width: 100%; height: auto; display: block; border: 1px solid #c9d6c3; border-radius: 4px">
+<a href="./img/cycles-demo.png" target="_blank" rel="noopener" style="display: block"><img src="./img/cycles-demo.png" width="1270" height="1100" loading="lazy" alt="Η εφαρμογή Cycles σε φωτεινό και σκούρο θέμα, με επισκόπηση πέντε εβδομάδων και κύκλο" style="width: 100%; height: auto; display: block; border: 1px solid #c9d6c3; border-radius: 4px"></a>
 <figcaption style="color: #47564d; font-size: 14px">Φωτεινό και σκούρο θέμα, με ονόματα δείγματος.</figcaption>
 </figure>
 </div>
@@ -778,7 +789,7 @@ a:focus-visible{outline:3px solid #0a6b4d;outline-offset:3px;border-radius:6px}
 <h3 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 22px">Dating Revealed: εφαρμογή-σύντροφος</h3>
 <p style="margin: 0; color: #47564d">Μια ελληνόγλωσση web εφαρμογή για όσους χρησιμοποιούν εφαρμογές γνωριμιών. Απαντά σε ερωτήσεις με βάση το περιεχόμενο του δικού μου βιβλίου, ώστε οι συμβουλές να στηρίζονται στο υλικό και όχι σε γενικές συμβουλές.</p>
 <figure style="margin: 8px 0 0; display: flex; flex-direction: column; gap: 8px">
-<img src="./img/datingrevealed-demo.png" width="1008" height="1000" loading="lazy" alt="Η εφαρμογή Dating Revealed με την οθόνη του coach στα ελληνικά και τη βιβλιοθήκη του βιβλίου" style="width: 100%; height: auto; display: block; border: 1px solid #c9d6c3; border-radius: 4px">
+<a href="./img/datingrevealed-demo.png" target="_blank" rel="noopener" style="display: block"><img src="./img/datingrevealed-demo.png" width="1008" height="1000" loading="lazy" alt="Η εφαρμογή Dating Revealed με την οθόνη του coach στα ελληνικά και τη βιβλιοθήκη του βιβλίου" style="width: 100%; height: auto; display: block; border: 1px solid #c9d6c3; border-radius: 4px"></a>
 <figcaption style="color: #47564d; font-size: 14px">Η οθόνη του coach στα ελληνικά και η βιβλιοθήκη με τα κεφάλαια του βιβλίου.</figcaption>
 </figure>
 </div>
@@ -786,7 +797,7 @@ a:focus-visible{outline:3px solid #0a6b4d;outline-offset:3px;border-radius:6px}
 <h3 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 22px">Εφαρμογή The Tango Book</h3>
 <p style="margin: 0; color: #47564d">Μια συνοδευτική εφαρμογή Android για ένα βιβλίο τάνγκο, φτιαγμένη για τον συγγραφέα του. Οι αναγνώστες ακολουθούν τα κεφάλαια, περιηγούνται στα σχέδια του βιβλίου ανά θέμα και βλέπουν κάθε κίνηση σε αργή animation, βήμα προς βήμα.</p>
 <figure style="margin: 8px 0 0; display: flex; flex-direction: column; gap: 8px">
-<img src="./img/tangobook-demo.png" width="1800" height="904" loading="lazy" alt="Η εφαρμογή The Tango Book με την αρχική οθόνη, τη λίστα κεφαλαίων, τη συλλογή σχεδίων και μια κινούμενη κίνηση με έλεγχο ταχύτητας" style="width: 100%; height: auto; display: block; border: 1px solid #c9d6c3; border-radius: 4px">
+<a href="./img/tangobook-demo.png" target="_blank" rel="noopener" style="display: block"><img class="wide" src="./img/tangobook-demo.png" width="1800" height="904" loading="lazy" alt="Η εφαρμογή The Tango Book με την αρχική οθόνη, τη λίστα κεφαλαίων, τη συλλογή σχεδίων και μια κινούμενη κίνηση με έλεγχο ταχύτητας" style="width: 100%; height: auto; display: block; border: 1px solid #c9d6c3; border-radius: 4px"></a>
 <figcaption style="color: #47564d; font-size: 14px">Πρώιμη έκδοση, στα ισπανικά, με έλεγχο ταχύτητας για τις animations.</figcaption>
 </figure>
 </div>
